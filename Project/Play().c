@@ -13,7 +13,7 @@ void play(){
             for(i=1;i<=NumberWords-1;i++){
                 if(strcmp(WordArray[i], answer) == 0){
                     printf("you gussed correctly :)\n");
-                    WordArray[i] = '';
+                    WordArray[i][0] = '\0';
                     correct ++;
                     break;
                 }else{
